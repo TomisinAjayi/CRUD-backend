@@ -23,7 +23,7 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-const path = require('path');
+// const path = require('path');
 
 // Import Router
 const authRouter = require("./routes/auth");
@@ -68,9 +68,13 @@ app.use("/api", authRouter);
 app.use("/api/user", usersRouter);
 app.use("/api/category", categoryRouter);
 app.use("/api/product", productRouter);
-app.use("/uploads/categories", express.static(path.join(__dirname, './public/uploads/categories')));
-app.use("/uploads/products", express.static(path.join(__dirname, './public/uploads/products')));
-app.use("/uploads/customize", express.static(path.join(__dirname, './public/uploads/customize')));
+// app.use("/uploads/categories", express.static(path.join(__dirname, './public/uploads/categories')));
+// app.use("/uploads/products", express.static(path.join(__dirname, './public/uploads/products')));
+// app.use("/uploads/customize", express.static(path.join(__dirname, './public/uploads/customize')));
+
+app.use("/uploads/categories", express.static('./public/uploads/categories'));
+app.use("/uploads/products", express.static('./public/uploads/products'));
+app.use("/uploads/customize", express.static('./public/uploads/customize'));
 // app.use("/api", brainTreeRouter);
 app.use("/api/order", orderRouter);
 app.use("/api/customize", customizeRouter);
