@@ -36,12 +36,12 @@ class User {
   }
 
   async postAddUser(req, res) {
-    let { allProduct, user, amount, transactionId, address, phone } = req.body;
+    let { allProduct, user, amount, address, phone } = req.body;
     if (
       !allProduct ||
       !user ||
       !amount ||
-      !transactionId ||
+      // !transactionId ||
       !address ||
       !phone
     ) {
@@ -52,7 +52,7 @@ class User {
           allProduct,
           user,
           amount,
-          transactionId,
+          // transactionId,
           address,
           phone,
         });

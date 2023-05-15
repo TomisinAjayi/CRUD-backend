@@ -18,10 +18,10 @@ const orderSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    transactionId: {
-      type: String,
-      required: true,
-    },
+    // transactionId: {
+    //   type: String,
+    //   required: false,
+    // },
     address: {
       type: String,
       required: true,
