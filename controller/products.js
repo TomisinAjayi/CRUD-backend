@@ -58,7 +58,7 @@ class Product {
       !pStatus
     ) {
       Product.deleteImages(images, "file");
-      return res.json({ error: "All filled must be required" });
+      return res.json({ error: "All filled must be required now!!!" });
     }
     // Validate Name and description
     else if (pName.length > 255 || pDescription.length > 3000) {
