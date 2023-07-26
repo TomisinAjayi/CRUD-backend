@@ -80,6 +80,7 @@ class Product {
         }
         let newProduct = new productModel({
           pImages: allImages,
+          pId,
           pName,
           pDescription,
           pPrice,
