@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TomisinAjayi/Apparelkare-backend"
+    "url": "https://github.com/TomisinAjayi/CRUD-backend"
   },
   "author": "Tomisin Ajayi | https://tomisinajayi-portfolio.netlify.app/",
   "license": "ISC",
-  "homepage": "https://github.com/TomisinAjayi/Apparelkare-backend",
+  "homepage": "https://github.com/TomisinAjayi/CRUD-backend",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "braintree": "^3.0.0",

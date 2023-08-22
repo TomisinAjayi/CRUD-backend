@@ -40,9 +40,9 @@ const CreateAllFolder = require("./config/uploadFolderCreateScript");
 CreateAllFolder();
 
 // Database Connection
-const adminPassword = encodeURIComponent( 'u9bI2ZOFbilH0lU7' );
+const adminPassword = encodeURIComponent( process.env.DATABASE_PASSWORD );
 mongoose.connect(
-  'mongodb+srv://thomieajayi:' + adminPassword + '@cluster0.97pr8ps.mongodb.net/?retryWrites=true&w=majority',
+  'mongodb+srv://' + process.env.DATABASE_USER + ':' + adminPassword + process.env.DATABASE_LINK,
    {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -76,7 +76,7 @@ app.use("/api/customize", customizeRouter);
 app.use("/api/waitlist", waitlistRouter);
 
 // Run Server
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log("Server is running on ", PORT);
 });
