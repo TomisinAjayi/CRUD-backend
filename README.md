@@ -24,5 +24,6 @@ Open a terminal on this directory
 npm run start:dev
 ```
 
-Access the web app at http://localhost:8000/
+Access the web app at https://nodejs-mondogb-backend-production.up.railway.app/
 
+Access the web app locally at http://localhost:8080/
